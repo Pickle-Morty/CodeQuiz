@@ -1,0 +1,42 @@
+.progress {
+    &__box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #E5E5E5;
+        width: 85%;
+        border-radius: 28px;
+        padding: 19px 24px;
+    }
+    &__bar {
+        width: 70%;
+        height: 2px;
+        background: #acabab;
+        margin: 0 40px;
+        position: relative;
+    }
+    &__bar--line {
+        position: absolute;
+        height: 2px;
+        background: #1400FF;
+    }
+    &__bar--dot{
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        background: #1400FF;
+        position: absolute;
+        top: -4px;
+    }
+}
+
+@media(max-width:550px) {
+    .progress{
+        &__box {
+            padding: 9px 12px;
+        }
+        &__bar {
+            margin: 0 20px;
+        }
+    }
+}

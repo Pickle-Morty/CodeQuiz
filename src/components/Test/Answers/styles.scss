@@ -1,0 +1,53 @@
+.answers {
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    margin: 0 auto 60px;
+    &__input {
+        width: calc(50% - 30px);
+        border: 2px solid #333333;
+        border-radius: 36px;
+        padding: 19px 20px;
+        display: flex;
+        text-align: left;
+        align-items: center;
+        margin: 7px 15px;
+        font-size: 22px;
+        &:hover{
+            cursor: pointer;
+          }
+    }
+
+    &__input--checkbox {
+        margin-right: 5px;
+        display: block;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #333333;
+        border-radius: 8px !important;
+
+    }
+}
+
+@media (max-width:700px) {
+    .answers {
+        &__input {
+            width: 100%;
+            padding: 13px 14px;
+            font-size: 18px;
+        }
+        &__wrapper {
+            flex-wrap: nowrap;
+            flex-direction: column;
+        }
+        &__input--checkbox{
+            width: 20px;
+            height: 20px;
+        }
+
+    }
+}
+
+@media (max-width:550px) {
+
+}

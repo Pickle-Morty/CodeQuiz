@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* Containers */
+
+.container {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+
+/* Buttons */
+
+.btn__prev {
+  background: #B4B4B4;
+  padding: 15px 20px;
+  border-radius: 14px;
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:active {
+    background: #cecece;
+    ;
+  }
+
+  img {
+    display: block;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width:700px) {
+  .btn__prev {
+    padding: 18px 15px;
+  }
+}
+
+.btn__next {
+  background: #1400FF;
+  padding: 18px 15px;
+  border-radius: 14px;
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+
+  img {
+    margin-left: 10px;
+  }
+
+  span {
+    display: block;
+    width: max-content;
+    font-size: 14px;
+    font-weight: 200;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:active {
+    background: #005eff;
+    ;
+  }
+}
+
+@media (max-width:700px) {
+  .btn__next {
+    span {
+      display: none;
+    }
+
+    img {
+      margin: 0;
+    }
+  }
+}
+
+.btn__submit {
+  display: block;
+  width: max-content;
+  color: white;
+  background: rgba(4, 191, 0, 1);
+  padding: 20px 17px;
+  border-radius: 20px;
+  margin: 15px;
+  font-size: 24px;
+  letter-spacing: 0.06em;
+  border: none;
+  &:hover{
+    cursor: pointer;
+  }
+  &:active{
+
+    transform: scale(1.1);
+  }
+}
+
+
+/* Fonts */
+
+@font-face {
+  font-family: 'PressStart2P';
+  src: url('./assets/fonts/PressStart2P-Regular/PressStart2P-Regular.eot')("../");
+  src: local('☺'), url('./assets/fonts/PressStart2P-Regular/PressStart2P-Regular.woff') format('woff'), url('./assets/fonts/PressStart2P-Regular/PressStart2P-Regular.ttf') format('truetype'), url('./assets/fonts/PressStart2P-Regular/PressStart2P-Regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

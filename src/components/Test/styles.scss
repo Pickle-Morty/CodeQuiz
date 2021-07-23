@@ -1,0 +1,57 @@
+.test {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    padding: 10px 0 0;
+    text-align: center;
+    &__massage{
+        margin-bottom: 40px;
+        font-size: 22px;
+        color: rgba(158, 151, 151, 1);
+    }
+    &__number{
+        display: block;
+        padding: 14px 18px 17px 14px;
+        background: #333333;
+        border-radius: 20px;
+        justify-content: center;
+        align-items: center;
+        color: rgba(255, 255, 255, 1);
+        font-size: 64px;
+        line-height: 1em;
+    }
+    &__text{
+        letter-spacing: 0.03em;
+    }
+    &__logo{
+        display: block;
+        position: absolute;
+        left: 60px;
+        top: 40px;
+        width: 150px;
+    }
+}
+
+@media (max-width:990px){
+    .test{
+        &__logo{
+            display: none;
+        }
+    }
+}
+
+@media (max-width:550px){
+    .test{
+        &__text{
+            font-size: 22px;
+        }
+        &__massege{
+            font-size: 14px;
+        }
+    }
+}
+
