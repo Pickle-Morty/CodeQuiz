@@ -16,7 +16,7 @@ const Test = ({qwestion}) => {
             <h1 className="test__text">{text}</h1>
             <span className="test__massage">выберите один ответ</span>
             <Answers variants={variants} />
-            <ProgressBar value="90" />
+            <ProgressBar value="45" />
         </div>
     )
 }

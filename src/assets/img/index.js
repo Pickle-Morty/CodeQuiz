@@ -8,10 +8,18 @@ import StartImg4 from "./Start/PackMan.png"
 import StartImg5 from "./Start/StartImg5.png"
 import StartImg6 from "./Start/StartImg6.png"
 import StartImg7 from "./Start/StartImg7.png"
-import AmongAss from "./Result/AmongAss.png"
-import PackMan from "./Result/PackMan.png"
+import AmongAss from "./Fail/AmongAss.png"
+import PackMan from "./Fail/PackMan.png"
+import PackManSmall from "./Result/PackManSmall.png"
+import Gears from "./Result/Gears.png"
+import CompleteImg1 from "./Complete/CompleteImg1.png"
+import CompleteImg2 from "./Complete/CompleteImg2.png"
+import CompleteImg3 from "./Complete/CompleteImg3.png"
+import CompleteImg4 from "./Complete/CompleteImg4.png"
+import CompleteImg5 from "./Complete/CompleteImg5.png"
 import Logo from "./Logo.png"
 
 
 export {ArrowPrev, ArrowNext, Logo,StartBtn,
-    StartImg1,StartImg2,StartImg3,StartImg4,StartImg5,StartImg6,StartImg7,AmongAss,PackMan}
+    StartImg1,StartImg2,StartImg3,StartImg4,StartImg5,StartImg6,StartImg7
+    ,AmongAss,PackMan,PackManSmall,Gears, CompleteImg1, CompleteImg2, CompleteImg3, CompleteImg4, CompleteImg5}

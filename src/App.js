@@ -2,35 +2,14 @@ import './App.scss';
 import Test from './components/Test';
 import { BrowserRouter, Route } from "react-router-dom"
 import Start from './components/Start';
-import Result from './components/common/Result';
 
 
-import { AmongAss, PackMan} from "./assets/img"
+import { Logo, AmongAss, PackMan, PackManSmall,Gears, CompleteImg1, CompleteImg2, CompleteImg3, CompleteImg4, CompleteImg5} from "./assets/img"
 import Fail from './components/FailResult';
 import Complete from './components/CompleteResult';
-const qwestion = {
-  id: 10,
-  text: "Как расшифровывается HTML?",
-  variants : [
-    { text: 'First', id: '1' },
-    { text: 'Second', id: '2' },
-    { text: 'third', id: '3' },
-    { text: 'Fiadsasrst', id: '4' },
-]
-}
-
-const score = {
-  fullScore:100, yourScore:15
-}
-
-const contant = {
-  title: "GAME OVER", subtitle: "Ooops!", massage: "Время вышло",
-  imgAray: [AmongAss, PackMan]
-} 
 
 let state = {
- 
-  qwestion : {
+   qwestion : {
     id: 10,
     text: "Как расшифровывается HTML?",
     variants : [
@@ -42,9 +21,9 @@ let state = {
   },
   failPage: {
     title: "GAME OVER", 
-    subtitle: "Ooops!",
+    subtitle: "Oops!",
     massage: "Время вышло",
-    imgAray: [AmongAss, PackMan],  
+    imgAray: [AmongAss, PackMan, Logo, PackManSmall, Gears],  
     fullScore:100,
     yourScore:15
   },
@@ -52,7 +31,7 @@ let state = {
     title: "  MISSION COMPLETE", 
     subtitle: "",
     massage: "",
-    imgAray: [AmongAss, PackMan],  
+    imgAray: [CompleteImg1, CompleteImg2, CompleteImg3, CompleteImg4, CompleteImg5],  
     fullScore:100,
     yourScore:100,
   }

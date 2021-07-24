@@ -2,18 +2,6 @@
   box-sizing: border-box;
 }
 
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
 /* Containers */
 
 .container {
@@ -102,18 +90,23 @@
   background: rgba(4, 191, 0, 1);
   padding: 20px 17px;
   border-radius: 20px;
-  margin: 15px;
-  font-size: 24px;
+  font-size: 23px;
   letter-spacing: 0.06em;
   border: none;
   &:hover{
     cursor: pointer;
   }
   &:active{
-
     transform: scale(1.1);
   }
 }
+@media (max-width:690px) {
+  .btn__submit {
+    padding: 13px 25px 21px ;
+    border-radius: 30px;
+  }
+  
+} 
 
 
 /* Fonts */

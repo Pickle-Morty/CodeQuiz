@@ -9,7 +9,6 @@ const Result = ({data}) => {
     const { title, subtitle, massage, fullScore, yourScore, imgAray } = data
     return (
         <section className="result">
-            <img src={Logo} alt="" className="result__logo"/> 
              {imgAray.map( img => <img src={img} alt="" className="result__img"/> )}
             <div className="result__title">
                 <span>{subtitle}</span>
