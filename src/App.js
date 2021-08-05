@@ -1,12 +1,12 @@
 import './App.scss';
-import Test from './components/Test';
+import Test from './components/Test/Test';
 import { BrowserRouter, Route } from "react-router-dom"
 import Start from './components/Start';
-
-
 import { Logo, AmongAss, PackMan, PackManSmall,Gears, CompleteImg1, CompleteImg2, CompleteImg3, CompleteImg4, CompleteImg5} from "./assets/img"
 import Fail from './components/FailResult';
 import Complete from './components/CompleteResult';
+import TestContainer from './components/Test/TestContainer';
+import {Provider} from "react-redux"
 
 let state = {
    qwestion : {
@@ -38,14 +38,15 @@ let state = {
 }
 
 
-function App() {
+function App({store}) {
   return (
-    <BrowserRouter>
+   <Provider store = {store}>
+      <BrowserRouter>
       <Route path="/" exact>
         <Start />
       </Route>
       <Route path="/test" exact>
-        <Test qwestion={state.qwestion} />
+        <TestContainer />
       </Route>
       <Route path="/fail" exact>
         <Fail data ={state.failPage} />
@@ -54,6 +55,7 @@ function App() {
         <Complete data = {state.completePage} />
       </Route>
     </BrowserRouter>
+   </Provider>
    
       
    

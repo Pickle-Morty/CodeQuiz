@@ -8,6 +8,8 @@ import StartImg4 from "./Start/PackMan.png"
 import StartImg5 from "./Start/StartImg5.png"
 import StartImg6 from "./Start/StartImg6.png"
 import StartImg7 from "./Start/StartImg7.png"
+import StartImgMobile1 from "./Start/StartImgMobile1.png"
+import StartImgMobile2 from "./Start/StartImgMobile2.png"
 import AmongAss from "./Fail/AmongAss.png"
 import PackMan from "./Fail/PackMan.png"
 import PackManSmall from "./Result/PackManSmall.png"
@@ -21,5 +23,5 @@ import Logo from "./Logo.png"
 
 
 export {ArrowPrev, ArrowNext, Logo,StartBtn,
-    StartImg1,StartImg2,StartImg3,StartImg4,StartImg5,StartImg6,StartImg7
+    StartImg1,StartImg2,StartImg3,StartImg4,StartImg5,StartImg6,StartImg7, StartImgMobile1, StartImgMobile2
     ,AmongAss,PackMan,PackManSmall,Gears, CompleteImg1, CompleteImg2, CompleteImg3, CompleteImg4, CompleteImg5}

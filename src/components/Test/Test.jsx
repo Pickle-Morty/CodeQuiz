@@ -3,12 +3,17 @@ import Answers from './Answers';
 import ProgressBar from './ProgressBar';
 import "./styles.scss"
 import {Logo} from "../../assets/img"
+import * as axios from "axios"
 
 
 
+const Test = ({question}) => {
+    const {id,text,variants} = question
 
-const Test = ({qwestion}) => {
-    const {id,text,variants} = qwestion
+    let questionData = {}
+    axios.get("https://thawing-brushlands-67997.herokuapp.com/api/").then((request) => {
+        console.log(request)
+    })
     return (
         <div className="test container">
             <img src={Logo} alt="" className="test__logo"/>            
