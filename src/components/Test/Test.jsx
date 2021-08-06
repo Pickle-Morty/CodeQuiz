@@ -1,27 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Answers from './Answers';
 import ProgressBar from './ProgressBar';
 import "./styles.scss"
-import {Logo} from "../../assets/img"
+import { Logo } from "../../assets/img"
 import * as axios from "axios"
+import { useSelector, useDispatch } from 'react-redux';
+import { setQuestionsAC } from "../../redux/store"
+import { useHistory, useParams } from "react-router-dom";
 
 
 
-const Test = ({question}) => {
-    const {id,text,variants} = question
-
-    let questionData = {}
-    axios.get("https://thawing-brushlands-67997.herokuapp.com/api/").then((request) => {
-        console.log(request)
-    })
+const Test = ({setQuestions, question, id}) => {
+    useEffect( ()=> {setQuestions()}, [])
     return (
         <div className="test container">
-            <img src={Logo} alt="" className="test__logo"/>            
-            <span className="test__number">{id}</span>
-            <h1 className="test__text">{text}</h1>
+            <img src={Logo} alt="" className="test__logo" />
+            <span className="test__number"></span>
+            <h1 className="test__text">{question?.text}</h1>
             <span className="test__massage">выберите один ответ</span>
-            <Answers variants={variants} />
-            <ProgressBar value="45" />
+            <Answers variants={question?.variants || []} />
+            <ProgressBar  id={id} totalQuestionCount = {5} />
         </div>
     )
 }

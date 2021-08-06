@@ -9,7 +9,7 @@ const Start = () => {
     return (
         <section className="start">
             
-            <NavLink to="/test" className="start__link">НАЧАТЬ</NavLink>
+            <NavLink to="/test/0" className="start__link">НАЧАТЬ</NavLink>
             <img src={StartImg1} alt="" className="start__img"/>
             <img src={StartImg2} alt="" className="start__img"/>
             <img src={StartImg3} alt="" className="start__img"/>

@@ -45,7 +45,7 @@ function App({store}) {
       <Route path="/" exact>
         <Start />
       </Route>
-      <Route path="/test" exact>
+      <Route path="/test/:id" exact>
         <TestContainer />
       </Route>
       <Route path="/fail" exact>

@@ -8,3 +8,11 @@ let redusers = combineReducers({
 let store = createStore(redusers)
 
 export default store
+
+
+export const setQuestionsAC = (questions) => {
+    return {
+        type: "SET_QESTIONS",
+        questions: questions
+    } 
+}
