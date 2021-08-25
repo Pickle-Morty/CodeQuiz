@@ -18,10 +18,13 @@
 
     &__massage {
         display: block;
-        width: 200px;
+        width: 100%;
         position: absolute;
         bottom: 20px;
-        right: calc(50% - 100px);
+        right: 0;
+        text-align: center;
+        color: #3E3737;
+        font-weight: 400;
     }
 
     &__img {
@@ -81,8 +84,8 @@
 
         &:nth-child(11) {
             top: 50px;
-            right: calc(50% - 100px);
-            width: 200px;
+            right: calc(50% - 125px);
+            width: 250px;
         }
     }
 
@@ -104,7 +107,7 @@
         align-items: flex-start;
         &__link {
             font-size: 50px;
-            margin: 270px auto 0;
+            margin: 340px auto 0;
         }
         &__img {
             &:nth-child(1) {
@@ -121,7 +124,7 @@
 
             &:nth-child(4) {
                 display: block;
-                bottom: 10%;
+                bottom: 45px ;
                 right: calc( 50% - 137px );
                 width: 275px;
             }
@@ -143,25 +146,57 @@
             }
             &:nth-child(9) {//lightning
                 display: block;
-                width: 49px;
+                width: 50px;
                 top:60px;
                 left: 19px;
             }
             &:nth-child(10) {//lightning
                 display: block;
                 width: 50px;
+                top: 135px;
+                right: 33px;
+            }
+            &:nth-child(11) {
+                top: 130px;
+                right: calc(50% - 100px);
+                width: 220px;
+            }
+        }
+    }
+}
+
+@media (max-width:370px) {
+    .start {
+        align-items: flex-start;
+        &__link {
+            font-size: 40px;
+            margin: 270px auto 0;
+        }
+        &__img {
+            &:nth-child(4) {
+                display: block;
+                bottom: 10%;
+                right: calc( 50% - 110px );
+                width: 220px;
+            }
+
+            &:nth-child(9) {//lightning
+                display: block;
+                width: 40px;
+                top:60px;
+                left: 19px;
+            }
+            &:nth-child(10) {//lightning
+                display: block;
+                width: 40px;
                 top: 95px;
                 right: 33px;
             }
             &:nth-child(11) {
-                top: 50px;
+                top: 90px;
                 right: calc(50% - 75px);
-                width: 200px;
+                width: 180px;
             }
-           
-           
-           
-
         }
     }
 }

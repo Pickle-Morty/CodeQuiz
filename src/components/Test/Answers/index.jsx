@@ -1,15 +1,15 @@
 import * as React from 'react'
 import "./styles.scss"
-import  { useState } from 'react';
+import { useState , useEffect} from 'react';
 
-const Answers = ({variants}) => {
-    let [answer, setAnswer] = useState()
+const Answers = ({ variants, setAnswer, id, checked, onSelectAnswer, setChecked, answerValue }) => {
+    
     return (
         <div className="answers">
-            {variants.map((variant) => {
+            {variants.map((variant , index) => {
                 return (
                     <label className="answers__input" >
-                        <input className="answers__input--checkbox" type="radio" value={variant} name="answer"  />
+                        <input onClick = {()=>{onSelectAnswer(index)}} className="answers__input--checkbox" type="radio" value={index} name="answer"  checked = {(index=== answerValue)?(checked):(false)} />
                         {variant}
                     </label>
                 )
